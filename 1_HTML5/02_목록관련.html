@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_목록관련태그</title>
+</head>
+
+<body>
+    <h1>목록 관련 태그</h1>
+    <p>
+        ul(unOrderd tag) 태그 : 순서가 없는 목록
+        ol(orderd tag) 태그 : 순서가 있는 목록
+        li(list item) 태그 : ul, ol 안에 들어가 목록의 요소를 나타내는 태그
+
+    <ul>
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+    </ul>
+
+    <ol type="1" start="5" reversed>
+        <!-- type으로 순서 표시 방법 변동 가능 A, a, 1, I... 등 / 기본값은 숫자 -->
+        <!-- start로 시작값 변경 가능 -->
+        <!-- reversed : 순서 반대로 -->
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+    </ol>
+
+    <ul>
+        <li>대분류1</li>
+        <li>대분류2</li>
+        <ol>
+            <li>소분류1</li>
+            <ol type="a">
+                <li>소소분류1</li>
+                <li>소소분류1</li>
+                <li>소소분류1</li>
+            </ol>
+            <li>소분류2</li>
+            <li>소분류3</li>
+        </ol>
+        <li>대분류3</li>
+    </ul>
+
+
+    </p>
+
+
+
+</body>
+
+</html>

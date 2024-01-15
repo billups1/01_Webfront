@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    input: inline 형식이다.<br>
+
+    <input><br>
+    <input type="date" name="" id="">
+    <input type="file">
+
+    <pre>
+    <h3>text 관련 input 태그의 공용속성</h3>
+    - size: 입력상자 크기
+    - maxlength: 입력 받는 텍스트의 최대크기
+    - placeholder: 입력상자의 내용 흐리게 보여줌
+
+</pre>
+
+    <label for="asd">asd</label><br>
+    <input id="asd" size="30" maxlength="10" placeholder="asdasd"><br>
+    <input type="password"><br>
+    <input type="url" name="" id=""> <!-- 주소 입력시 사용하는 입력상자 --><br>
+    <!-- url, email, tel -> 폼태그 안에서 사용되면 유효성 검사 진행 -->
+
+
+    <form>
+        <input type="url" value="https://">
+        <input type="email">
+        <button>제출</button>
+    </form>
+    <!-- value: input태그에 들어갈 초기값을 지정해준다 -->
+
+    <pre>
+숫자관련 input 태그 중 공용을 쓸 수 있는 것
+- min max : 최대값 최소값
+- step : 증가/감소 단계 지정
+- range : 슬라이드바를 이용해서 숫자를 지정 (JS와 함께 사용)
+
+</pre>
+<input type="number" step="3" max="100" value="1">
+<input type="range" min="0" max="50" step="10">
+<input type="date">
+<input type="month">
+<input type="week">
+<input type="time">
+<input type="datetime-local">
+
+<input type="radio" name="asd" id="asd" value="20"><label for="asd">20대</label>
+<input type="radio" name="asd" id="asd" value="30"><label for="asd">30대</label>
+<input type="radio" name="asd" id="asd" value="40"><label for="asd">40대</label>
+<!-- 묶음으로 다루려는 input태그들은 같은 name 가지기 -->
+
+<br>
+<input type="checkbox" name="hobby" id="baseball"> <label for="baseball">야구</label>
+<input type="checkbox" name="hobby" id="basketball"> <label for="basketball">농구</label>
+<input type="checkbox" name="hobby" id="soccer"> <label for="soccer">축구</label>
+
+<input type="checkbox">
+
+
+<h1>폼태그</h1>
+<pre>
+    1 action: 내부에 작성될 값을 전달할 서버 또는 페이지 주소를 작성
+    2 name: form  태그의 이름을 지정하여 폼태그 구분
+    3 method: post, get...
+    4 target: action에 지정된 주소를 현재탭/새탭 중 어디서 열지 지정
+
+    <form>
+
+    </form>
+
+<!-- 아무 기능없는 버튼을 쓰려면 type="button" -->
+
+
+</pre>
+
+<fieldset>
+    <legend>로그인폼</legend>
+    로그인폼2
+</fieldset>
+
+textarea 여러줄을 입력하기 위한 입력상자
+<textarea rows="5" cols="70" style="resize: none;"> 
+    
+</textarea>
+<!-- 최대 5줄 / 한줄에 최대 70개 / 리사이즈 안되게 -->
+
+
+<form action="">
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option selected>3</option>
+        <option value="asd">4</option>
+    </select>
+
+    <!-- 옵션 태그에 밸류가 있으면 밸류 안에 작성된 값 반환 -->
+    <!-- 옵션 태그에 밸류가 없으면 <option></option> 사이에 작성된 내용 반환 --> 
+    <!-- 옵션 : selected / 라디오, 체크박스: checked -->
+
+</form>
+
+</body>
+
+</html>
