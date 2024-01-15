@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: red 3px solid;
+        }
+
+        strong {
+            color: blueviolet;
+        }
+
+        #li-1 {
+            background-color: red;
+        }
+
+        #li-2 {
+            background-color: wheat;
+        }
+
+        #li-3 {
+            background-color: aqua;
+        }
+
+        #li-4 {
+            background-color: navy;
+        }
+
+        #li-5 {
+            background-color: rebeccapurple;
+        }
+
+        /* html에서는 하이픈(-)표기법이 국룰 */
+
+        @font-face {
+            font-family: 'seolleimcool-SemiBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* 눈누 폰트 페이지 "웹폰트로 사용"에서 가져와서 아래처럼 적용 */
+
+        * {
+            font-family: 'seolleimcool-SemiBold';
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS(Cascading Style Sheets)</h1>
+    마크업언어가 실제로 화면에 표시되는 방법을 구현하는 언어
+
+    <h1>CSS Selector(선택자)</h1>
+    <pre>
+    Selector란?
+    현재 HTML 문서 내에서 특정한 요소를 선택하는 문자 또는 문자열
+</pre>
+
+    <hr>
+
+    <h3>태그 선택자</h3>
+    <pre>
+    현재 html 문서 내에 같은 태그를 선택하는 선택자    
+
+<div>
+    <strong>스트롱 태그 작성 내용</strong> <br>
+    <span>인라인 태그(인라인 형식의 대표 태그) 작성 내용</span>
+    <ul>
+        <li>
+            <strong>스트롱 태그에 작성된 내용</strong>
+        </li>
+        <li>
+            <span>스트롱 태그에 작성된 내용</span>
+        </li>
+    </ul>
+</div>
+
+</pre>
+
+    <hr>
+    <ol>
+        <li>
+            <span id="li-1">1번 내용</span>
+        </li>
+        <li>
+            <span id="li-2">2번 내용</span>
+        </li>
+        <li>
+            <span id="li-3">3번 내용</span>
+        </li>
+        <li>
+            <span id="li-4">4번 내용</span>
+        </li>
+        <li>
+            <span id="li-5">5번 내용</span>
+        </li>
+    </ol>
+
+
+
+</body>
+
+</html>

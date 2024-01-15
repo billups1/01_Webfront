@@ -1,0 +1,92 @@
+h1 {
+    color: red;
+}
+
+div[name="name-1"] {
+    /* div 중에 name 속성을 name-1인 것에 다음 css 적용하겠다. */
+    background-color: red;
+}
+
+p[name="name-1"] {
+    /* p 중에 name 속성을 name-1인 것에 다음 css 적용하겠다. */
+    background-color: rgb(4, 235, 42);
+}
+
+[name="name-2"] { 
+    /* 선택자는 생략 가능 */
+    background-color: blue;
+}
+
+#parent-ul {
+    background-color: brown;
+}
+
+#parent-ul > li {
+    background-color: orange;
+}
+
+#parent-ul > li > span {
+    /* #parent-ul > span : 안됨, 자식의 자식은 바로 지정 안됨 */
+    background-color: teal;
+}
+
+#test-div {
+    background-color: crimson;
+}
+
+#test-div p {
+    background-color: yellowgreen;
+}
+
+#test-div > div > p {
+    background-color: aqua;
+}
+
+.div-cls {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    margin-bottom: 30px; /* 아래쪽 요소와의 간격 */
+
+    cursor: pointer; /* 요소에 마우스 커서가 올라오면 손가락 모양으로 변경 */
+    
+}
+
+#active-test:active {
+    background-color: yellow;
+}
+
+#hover-test:hover {
+    background-color: violet;
+    width: 230px;
+    height: 230px;
+    transition-duration: 0.5s;
+}
+
+#focus-test:focus {
+    background-color: rgb(217, 230, 241);
+    height: 80px;
+}
+
+input[name="fruits"]:checked {
+    width: 30px;
+    height: 30px;
+    background-color: red; /* <- 안됨 / 체크박스는 크기를 제외한 스타일은 적용되지 않음 */
+}
+
+#test-div2 >input:enabled {
+    background-color: aqua;
+}
+
+#test-div2 > input:disabled {
+    background-color: red;
+}
+
+#div3 ~ div {
+    background-color: khaki;
+}
+#div1 + div {
+    background-color: burlywood;
+}
+
