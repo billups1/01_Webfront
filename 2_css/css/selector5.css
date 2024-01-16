@@ -1,0 +1,39 @@
+/* only-child */
+
+#test1 > p:only-child {
+    background-color: blue;
+}
+/*         특정 요소의 자식이 오직 하나인 조건으로 선택
+        만약 자식이 여러개면 모두 선택 안됨 */
+
+#test2 > p:only-of-type {
+    background-color: red;
+}
+/*         특정 요소의 자식 중 지정된 형태와 같은 자식 요소가 하나만 있을때 선택
+        p에 설정했으면, 다른 태그 제외하고 p 하나만 있으면 적용 */
+
+#test3 > p:empty {
+    background-color: greenyellow;
+    height: 30px;
+}
+/*         자식 요소가 없는 요소를 선택
+        자식요소: 태그, 글자, 띄어쓰기 등 */
+/* 여러 선택자 동시 선택 */
+
+
+#test4-1, #test4-2, .test4-3 {
+    background-color: aqua;
+}
+
+/* 특정 요소 내부에 있는 클래스만 선택 */
+#test5-1 .c5 {
+    background-color: red;
+}
+
+#test5-2 > li.c5 {  /* test5-2 클래스의 자식 중 li 중 c5 클래스만 선택: li.c5 *띄어쓰기 없음 주의* */
+    background-color: red;
+}
+
+.test6.c6 {  /* 클래스가 여러개인 요소 선택 :  .test6.c6  *띄어쓰기 없음 주의* */
+    background-color: aquamarine;
+}

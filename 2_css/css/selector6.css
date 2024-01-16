@@ -1,0 +1,38 @@
+
+
+/* 
+#test {
+    background-color: red;
+}
+
+div {
+    background-color: blue;
+    text-align: center;
+}
+label {
+    text-align: left; 
+} */
+
+/* 5순위 태그선택자 */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red !important;  /* 1순위 !important */
+}
+
+/* 4순위 클래스선택자 */
+
+.cls1 {
+    background-color: green;
+}
+    
+.cls1 { /* 동일한 우선순위에서 마지막 작성된 설정값이 적용됨 */
+    background-color: yellow;
+}
+
+/* 3순위 아이디선택자 */
+#test1 {
+    height: 100px;
+    background-color: black;
+    color: white;
+}

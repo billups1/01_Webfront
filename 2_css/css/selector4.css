@@ -1,0 +1,62 @@
+/* 일반 구조 선택자 */
+
+/* first-child: 형제 관계 요소 중 첫번째 요소 */
+#test1 > p:first-child {  /* 첫번째 자식이 p태그면 O / 자식 중 첫번째 p태그를 찾는게 x */
+    background-color: red;
+}
+
+/* last-child:  */
+#test1 > pre:last-child { /* 마지막 자식이 pre태그면 O / 자식 중 마지막 pre태그를 찾는게 x */
+    background-color: orange;
+}
+
+/* nth-child(수열): 형제관계의 요소 중 수열번째 요소를 모두 선택
+- 순서 따질때 1부터 시작
+*/
+#test1 > p:nth-child(2) { /* #test1 자식 중 두번째 요소를 찾고 그것이 P태그이면 적용 */
+    background-color: yellow;
+}
+
+#test1 > p:nth-child(4) { /* #test1 자식 중 4번째 요소를 찾고 그것이 P태그이면 적용 */
+    background-color: green;
+}
+
+/* 홀수번째 형제 요소 선택하기 */
+#test1 > p:nth-child(2n-1) {
+    font-size: 25px;
+}
+#test1 > p:nth-child(2n) {
+    border: 3px solid;
+}
+
+/* nth-last-child(수열): 형제관계의 요소 중에 뒤에서부터 지정된 수열번째 요소 선택 */
+#test1 > p:nth-last-child(2) {
+    background-color: pink;
+}
+
+
+/* 형태 구조 선택자 */
+
+/* first-of-type */
+#test2 > p:first-of-type {  /* #test2 자식 중 "p태그 중" 첫번째 요소 찾기 */
+    background-color: orange;
+}
+
+#test2 > p:last-of-type {  /* #test2 자식 중 "p태그 중" 마지막 요소 찾기 */
+    background-color: skyblue;
+}
+
+#test2 > p:nth-of-type(2n-1) { /* 같이 선택된 형제들 중에서 수열번째 모든요소 */
+    font-size: 30px;
+}
+#test2 > p:nth-last-of-type(2n) { /* 같이 선택된 형제들 중에서 수열번째 모든요소 */
+    background-color: red;
+}
+
+
+/* 부정 선택자 */
+
+#test3 > li:not(:nth-of-type(3n)) {  /* test3 중 li요소 중 3의 배수 요소만 제외 */
+    background-color: aqua;
+}
+
