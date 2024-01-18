@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    /* border: solid 1px; */
+}
+
+body {
+    margin: 0 10px;
+}
+
+fieldset {
+    border: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav button {
+    background-color: transparent;
+    border: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+nav > div a:nth-child(1) {
+    color: black;
+    padding-right: 10px;
+}
+
+nav > div a:nth-child(2) {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+/* 검색창 */
+#search-box {
+    display: flex;
+}
+#search-box > div {
+    height: 40px;
+    align-items: center;
+}
+
+#search-box div:nth-child(1) {
+    border: 1px #ddd solid;
+    display: flex;
+    height: 45px;
+}
+
+#search-box input {
+    border: 0;
+    flex-basis: 97%;
+    height: 100%;
+    padding: 5px;
+    outline: none;
+    width: 400px;
+}
+/* 돋보기 */
+#search-box > div:nth-child(2) {
+    border: 1px #ddd solid;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+/* 마이크 */
+#search-box > div:nth-child(3) {
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+#search-box > div:nth-child(3):hover {
+    background-color: #666666;
+}
+
+.accountCircle {
+    background-color: aqua;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* 콘텐츠 */
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mainContent {
+    flex-basis: 80%;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+
+
+/* 영상 */
+#videoSection {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#video {
+    min-width: 1100px;
+}
+
+#video > img {
+    width:"100%";
+    object-fit:cover
+}
+
+#videoInformaton-2 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#videoInformaton-2 > div > div {
+    margin-right: 15px;
+    
+}
+
+#videoInformaton-2 > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#videoInformaton-2 > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* 댓글 */
+
+#comment {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#commnetInformation {
+    display: flex;
+    flex-direction: row;
+}
+
+#commnetInputform {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+#commnetInputform > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#commnetInputform > div:nth-child(2) input {
+    width: 100%;
+}
+
+#commnetInputform > div:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#commnetContent {
+    display: flex;
+    margin-bottom: 20px;
+}
+#commnetContent > div:nth-child(1){
+    margin-right: 15px;
+}
+
+#commnetContent > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#commnetContent > div:nth-child(2) > div:nth-child(4) a {
+    color: blue;
+}
+
+
+
+
+/* 광고 */
+
+#subContent {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#ad {
+    flex-basis: auto;
+}
+
+#videoInformaton-3 {
+    background-color: #ddd;
+    border-radius: 15px;
+    padding: 20px;
+}
+#videoInformaton-3:hover {
+    background-color: #a7a7a7;
+}
+
+input[name=commentInputBox] {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: #666666 solid 2px;
+    padding: 5px;
+    outline: none;
+}
+
+#ad {
+    display: flex;
+    border-radius: 7px;
+    flex-direction: column;
+}
+
+#ad > div:nth-child(1) {
+    text-align: center;
+}
+
+#ad > div:nth-child(1) img {
+    max-height: 80px;
+}
+
+#ad > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ad > div:nth-child(2) img {
+    max-height: 40px;
+}
+
+
+
+
+/* 추천영상 */
+
+#recommendVideoCategory {
+    margin-bottom: 20px;
+}
+.recommendVideo {
+    display: flex;
+    margin-bottom: 20px;
+}
+.recommendVideo > div:nth-child(1) {
+    flex-basis: 40%;
+    position: relative;
+}
+.recommendVideo > div:nth-child(2) {
+    flex-basis: 60%;
+}
+
+.recommendVideo img {
+    max-width: 100%;
+    
+}
+.recommendVideo button {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 5%;
+    right: 5%;
+}
+
+#bBtn {
+    top: 5% + 30px;
+    right: 5%;
+}

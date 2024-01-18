@@ -1,0 +1,103 @@
+img {
+    width: 200px;
+}
+
+
+
+/* transform : 변형과 관련된 속성 */
+
+/* 
+css 속성  작성 시 크로스 브라우저(브라우저가 달라지는 경우) 처리 방법
+-ms- 마이크로소프트
+-webkit- 크롬, 사파리
+-o- 오페라
+-moz- 파이어폭스
+*/
+
+/* 좌우이동 */
+
+.trans-x-2d:hover {
+    -webkit-transform: translateX(100px);
+    /* 아래것만 있어도 되긴 됨 */
+    transform: translateX(100px);
+}
+
+.trans-y-2d:hover {
+    -webkit-transform: translateY(100px);
+    /* 아래것만 있어도 되긴 됨 */
+    transform: translateY(100px);
+}
+
+.trans-xy-2d:hover {
+    transform: translate(5000px, 1000px);
+    transition: 10s;
+}
+
+.trans-x-scale-2d:hover {
+    transform: scaleX(2);
+    margin-left: 100px;
+}
+
+.trans-y-scale-2d:hover {
+    transform: scaleY(2);
+}
+
+.trans-3d:hover {
+    /* z축 길이 지정 : 원근법 적용 */
+    transform: perspective(300px) translate3d(50px, 50px, 100px);
+    transition: 2s;
+}
+/* perspective : 원근법 */
+
+.trans-lotate-x-3d {
+    transform: perspective(300px) rotateX(45deg);
+}
+
+.trans-lotate-y-3d {
+    transform: perspective(300px) rotateY(45deg);
+}
+
+.trans-lotate-y-3d {
+    transform: perspective(300px) rota(45deg);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: solid;
+}
+
+.test1:hover {
+    background-color: yellow;
+    transition: 1s;
+}
+
+.test2:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+
+.test2 {
+    transition-duration: 3s;
+    /* 호버하는 css에다가 주면 나갈때는 확 움직임 종료됨 */
+    /* 이렇게 따로 주면 마우스 뗄때도 서서히 나가짐 */
+}
+
+.test3 {
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    /* ease(기본값) / ease-in / ease-out / linear */
+}
+
+.test3:hover {
+    background-color: springgreen;
+    transform: rotate(720deg);
+}
+
+.test4:hover {
+    transform: translateX(100px);
+}
+.test4 {
+    transition-delay: 2s;
+}
