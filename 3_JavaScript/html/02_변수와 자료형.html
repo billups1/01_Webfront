@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1></h1>
+
+    var는 선언이 여러번 가능하기 때문에, 같은이름으로 여러번 선언하면 
+    해당 var 변수가 여러번 선언되어 각 메모리를 차지한채, 마지막 선언된 값이 나옴
+
+    let은 한번만 선언 가능, 값 변경은 가능
+
+    const는 한번 선언 후 값 변경 불가
+
+    <h1>자바스크립트의 자료형</h1>
+
+    <pre>
+        자바스크립트는 변수 선언 시 별도의 자료형을 지정하지 않음.
+        -> 변수에 대입되는 값에 의해서 자료형이 결정됨.
+
+
+
+    </pre>
+    <h3>JavaScript 변수의 종류와 특징</h3>
+    <pre>
+        var: 변수, 변수명 중복 o(덮어쓰기), 함수 레벨 scope
+        let: 변수, 변수명 중복 x, 블록{} 레벨 scope
+        const: 정수, 변수명 중복 x, 블록{} 레벨 scope
+
+        1순위 const(js는 특정 요소를 선택해서 사용하는 경우가 많기 때문에 
+        const 상수에 고정시켜둠)
+        2순위 let
+        3순위 var
+    </pre>
+    
+
+    <script src="../js/02_변수와 자료형.js"></script>
+    
+</body>
+</html>

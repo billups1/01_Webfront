@@ -1,0 +1,132 @@
+* {
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* border: white 1px solid; */
+}
+
+.container {
+    background-color: black;
+    height: 100%;
+    /* 내가 보고있는 전체 높이 */
+}
+
+#logo {
+    width: 50px;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    flex-basis: 75%;
+}
+
+nav>ul>li {
+    text-align: center;
+    line-height: 60px;
+    margin: 0 10px;
+}
+
+.icon-box {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-around;
+}
+
+.icon-box>div {
+    text-align: center;
+    line-height: 60px;
+}
+
+nav>a:nth-child(1) {
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-image: url('/images/넷플릭스1.jpg');
+    width: 100vw;
+    height: 800px;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#title-box {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#title-box>h1 {
+    font-size: 50px;
+}
+
+#title-box>p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#title-box-btn {
+    margin-top: 50px;
+}
+
+#title-box-btn button {
+    color: black;
+    padding: 10px 50px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#title-box-btn button:last-child {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.content-box {
+    border: red solid;
+    display: flex;
+    flex-direction: column;
+}
+.content-box >h2 {
+    padding: 20px 50px;
+}
+
+.content-box >section {
+    display: flex;
+}
+
+.content-box img {
+    width: 200px;
+}
+
+.poster-box {
+    position: relative;
+    margin: 0 50px;
+}
+
+.poster-box p {
+    color: black;
+    font-size: 150px;
+    font-weight: bold;
+    -webkit-text-stroke: 5px white;
+
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}

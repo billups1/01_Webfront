@@ -70,7 +70,7 @@ nav > div a:nth-child(2) {
 
 #search-box input {
     border: 0;
-    flex-basis: 97%;
+    flex-grow: 1;
     height: 100%;
     padding: 5px;
     outline: none;
@@ -313,4 +313,33 @@ input[name=commentInputBox] {
 #bBtn {
     top: 5% + 30px;
     right: 5%;
+}
+
+
+@media all and (max-width: 767px) {
+    main {
+        width: 100vw;
+    }
+    
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #video {
+        min-width: 100%;
+    }
+
+    #ad {
+        display: none;
+    }
+
+    #search-box input {
+        width: 300px;
+    }
+    .phoneDisplayNone {
+        display: none;
+        background-color: red;
+    }
+
 }
