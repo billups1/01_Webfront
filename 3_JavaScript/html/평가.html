@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/평가.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div id="inputContainer">
+            <table>
+                <tr>
+                    <th>너비 : </th>
+                    <td><input type="number" id="width" style="width: 80px;"> px</td>
+                    <th>높이 : </th>
+                    <td><input type="number" id="height" style="width: 80px;"> px</td>
+                </tr>
+                <tr>
+                    <th>글자크기 : </th>
+                    <td><input type="number" id="fontSize" style="width: 80px;"> px</td>
+                    <th>굵기 : </th>
+                    <td>
+                        <label for="normal">보통<input type="radio" name="bold" id="normal" value="normal"></label>
+                        <label for="bold">굵게<input type="radio" name="bold" id="bold" value="bold"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>글자색 : </th>
+                    <td><input id="color" type="text"></td>
+                    <!-- 밸류 삭제 -->
+                    <th>배경색 : </th>
+                    <td><input id="backgroundColor" type="text"></td>
+                    <!-- 밸류 삭제 -->
+                </tr>
+                <tr>
+                    <th>가로정렬 : </th>
+                    <td colspan="3">
+                        <label for="left">왼쪽<input type="radio" name="alignWidth" id="left" value="left"></label>
+                        <label for="centerWidth">가운데<input type="radio" name="alignWidth" id="centerWidth"
+                                value="center"></label>
+                        <label for="right">오른쪽<input type="radio" name="alignWidth" id="right" value="right"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>세로정렬 : </th>
+                    <td colspan="3">
+                        <label for="top">위<input type="radio" name="alignHeight" id="top" value="top"></label>
+                        <label for="centerHeight">가운데<input type="radio" name="alignHeight" id="centerHeight"
+                                value="centerHeight"></label>
+                        <label for="bottom">아래<input type="radio" name="alignHeight" id="bottom" value="bottom"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>출력문자열 : </th>
+                    <td colspan="3"><input type="text" id="text"></td>
+                </tr>
+            </table>
+            <button id="testBtn">적용하기</button>
+        </div>
+
+        <div id="resultContainer">
+
+        </div>
+    </main>
+
+    <script src="../js/평가.js"></script>
+
+</body>
+
+</html>

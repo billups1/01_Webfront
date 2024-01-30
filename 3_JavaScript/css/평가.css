@@ -1,0 +1,18 @@
+
+main {
+    width: 600px;
+}
+
+#testBtn {
+    display: block;
+    margin: auto;
+}
+
+#inputContainer > table {
+    border-spacing: 0 40px;
+    width: 100%;
+}
+
+#text {
+    width: 100%;
+}
